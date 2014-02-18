@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Rose Meme</title>
+	<link rel="stylesheet" type="text/css" href="/static/stylesheets/pinterest.css">
+	<link rel="stylesheet" type="text/css" href="/static/stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/stylesheets/bootstrap-theme.min.css">
+
+	<script src = "/static/js/jquery.min.js"></script>
+	<script src = "/static/js/bootstrap.min.js"></script>
+	<script src = "/static/js/mymeme.js"></script>
+</head>
+<body>
+<!-- Modal -->
+<div id='add-meme-modal' class="modal fade" id="myModal"
+     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+				        aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">Add a Meme</h4>
+			</div>
+			<div class="modal-body">
+				<div class="input-group">
+					<span class="input-group-addon">Caption: </span> <input
+						id="caption" type="text" class="form-control"
+						placeholder="Caption">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">Image URL: </span> <input id="imgUrl"
+					                                                          type="text" class="form-control"
+					                                                          placeholder="Image URL">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button id="add-meme-button" type="button"
+				        class="btn btn-primary">Add Meme
+				</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" type="button" data-toggle="collapse"
+			        data-target=".bs-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a href="/pinterest.html" class="navbar-brand">Rose Meme</a>
+		</div>
+		<nav class="collapse navbar-collapse bs-navbar-collapse"
+		     role="navigation">
+			<ul class="nav navbar-nav navbar-left">
+				<li><a id='display-add-meme-modal' href="#">Add Meme</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a data-toggle="tooltip" data-placement="bottom" title="Offline Mode" class="offline">
+					<span class="glyphicon glyphicon-resize-full offline-icon"
+					      style="display:none"></span></a></li>
+				<!--<li><a id='toggle-edit-mode-button' href="#">Edit</a></li>-->
+				<!--<li><a id='refresh-button' href="#">Refresh</a></li>-->
+			</ul>
+		</nav>
+	</div>
+</header>
+<div id="wrapper">
+	<div id="columns">
+
+	</div>
+</div>
+
+
+</body>
+</html>

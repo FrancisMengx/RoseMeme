@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Rose Meme</title>
+  <link rel="stylesheet" type="text/css" href="/static/stylesheets/meme.css">
+  <script type="text/javascript" src="/static/js/meme.js"></script>
+</head>
+<body>
+  <div class="photos">
+    {% for meme in memes %}
+      <img src="{{meme.image_url}}" class="" title="{{meme.caption}}" alt="{{meme.caption}}">
+    {% endfor %}
+  </div>
+  <div class="controls">
+    <button class="prev">Previous</button>
+    <button class="next">Next</button>
+    <div class="caption"></div>
+  </div>
+</body>
+</html>
