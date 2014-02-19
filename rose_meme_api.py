@@ -11,31 +11,22 @@ from models import Meme
 class RoseMemeApi(remote.Service):
     """ Provides the Move Quote JSON api methods. """
     # Insert meme
-    @Meme.method(path='meme/insert',
-                       http_method='post',
-                       name='meme.insert')
+    @Meme.method(path='meme/insert',http_method='POST',name='meme.insert')
     def rose_meme_insert(self, a_meme):
         """Insert a meme in the database. """
-        # add this object into the database
         a_meme.put()
-        # return the object that was inserted
         return a_meme
     
     
     # Read meme
-    @Meme.query_method(path='meme/list',
-                       name='meme.list',
-                       http_method='GET',
-                       query_fields=('limit', 'order', 'pageToken'))
+    @Meme.query_method(path='meme/list',name='meme.list',http_method='GET',query_fields=('limit', 'order', 'pageToken'))
     def rose_meme_read(self, query):
+        """ Return a list of memes. """
         return query
      
      
     # Delete meme
-    @Meme.method(path='meme/delete/{id}',
-                       name='meme.delete',
-                       http_method='GET',
-                       request_fields=('id',))
+    @Meme.method(path='meme/delete/{id}', name='meme.delete', http_method='GET', request_fields=('id',))
     def rose_meme_delete(self, a_meme):
         if not a_meme.from_datastore:
             raise endpoints.NotFoundException('Meme not Found')
