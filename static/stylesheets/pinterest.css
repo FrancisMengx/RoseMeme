@@ -51,11 +51,22 @@
 	margin: 0;
 }
 
-@media (min-width: 960px) {
+.pin-icon{
+	margin-left: 83%;
+}
+
+.delete-meme{
+	margin-left: 10px;
+}
+
+@media (max-width: 960px) {
 	#columns {
 		-webkit-column-count: 4;
 		-moz-column-count: 4;
 		column-count: 4;
+	}
+	.pin-icon{
+		margin-left: 80%;
 	}
 }
 
