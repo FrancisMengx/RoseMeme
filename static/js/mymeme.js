@@ -15,11 +15,10 @@ rh.rosememe.endpoints.insertRoseMeme = function (caption, url) {
 	console.log(postJson);
 	if (rh.rosememe.selectedId > 0) {
 		postJson.id = rh.rosememe.selectedId;
-		var img= $('#' + rh.rosememe.selectedId).children('img');
-		var caption= $('#' + rh.rosememe.selectedId).children('p');
+
 		rh.rosememe.memes[rh.rosememe.selectedId] = postJson;
-		$(caption).html(postJson.caption);
-		$(img).attr('src', postJson.image_url+'?'+Math.random());
+		$('.cap'+rh.rosememe.selectedId).html(postJson.caption);
+		$('.img'+rh.rosememe.selectedId).attr('src', postJson.image_url+'?'+Math.random());
 	}
 	gapi.client.rosememe.meme.insert(postJson).execute(function (resp) {
 		console.log(resp);
@@ -75,9 +74,7 @@ rh.rosememe.enableButtons = function () {
 		$('#add-meme-modal').modal('hide');
 	});
 
-	$('.pin').click(function () {
 
-	});
 };
 
 rh.rosememe.enableEditButton = function () {
@@ -95,6 +92,22 @@ rh.rosememe.enableEditButton = function () {
 		var id = rh.rosememe.getMemeId($(this));
 		rh.rosememe.endpoints.deleteRoseMeme(id);
 	});
+
+	$('img').click(function () {
+		var id = rh.rosememe.getMemeId($(this));
+		$('#'+id).addClass('active');
+		$('#view-meme-modal').modal('show');
+	});
+	$('.close').click(function(){
+		$('.item').removeClass('active');
+	});
+
+	$('.left').click(function(){
+		$('#view-meme').carousel('prev');
+	});
+	$('.right').click(function(){
+		$('#view-meme').carousel('next');
+	})
 };
 
 
@@ -131,7 +144,13 @@ rh.rosememe.print = function (meme) {
 	$('#columns').append('<div class = "pin" id = "' + meme.id + '">' +
 		'<div class = "pin-icon"><i class="fa fa-pencil-square-o edit-meme"></i>' +
 		'<span class = "delete-meme">X</span></div>' +
-		'<img src = "' + meme.image_url + '"/>' +
-		'<p>' + meme.caption + '</p></div>');
+		'<img class = "img'+meme.id+'" src = "' + meme.image_url + '"/>' +
+		'<p class = "cap'+meme.id+'">  ' + meme.caption + '</p></div>');
+	$('.carousel-inner').append('<div class="item" id = "'+meme.id+'">'+
+		'<img class = "img'+meme.id+'" src="'+meme.image_url+'">'+
+			'<div class="carousel-caption">'+
+			'<h3 class = "cap'+meme.id+'">'+meme.caption+'</h3>'+
+			'</div>'+
+		'</div>');
 	rh.rosememe.enableEditButton();
 };
