@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="320d09d5-e7fa-4b23-8dbb-53c483dc9649" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/mymeme.js" afterPath="$PROJECT_DIR$/static/js/mymeme.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/stylesheets/pinterest.css" afterPath="$PROJECT_DIR$/static/stylesheets/pinterest.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/pinterest.html" afterPath="$PROJECT_DIR$/static/pinterest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mengx-rose-meme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +12,7 @@
     <file path="/add.html" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392745069492" ignored="false" />
     <file path="$USER_HOME$/Documents/IOSDev/mengx-movie-quotes/mengx-movie-quotes/static/js/mybootstrap.js" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392752666813" ignored="false" />
     <file path="/pinterest.html" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392784453691" ignored="false" />
-    <file path="/mymeme.js" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392788784181" ignored="false" />
+    <file path="/mymeme.js" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392843681110" ignored="false" />
     <file path="$USER_HOME$/Documents/IOSDev/mengx-movie-quotes/mengx-movie-quotes/static/jqueryui.html" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392754307903" ignored="false" />
     <file path="/jqueryui.html" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392754307903" ignored="false" />
     <file path="$USER_HOME$/Documents/IOSDev/mengx-movie-quotes/mengx-movie-quotes/static/js/myjqueryui.js" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392760687832" ignored="false" />
@@ -25,7 +20,7 @@
     <file path="/app.yaml" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392763128798" ignored="false" />
     <file path="$USER_HOME$/Documents/IOSDev/mengx-movie-quotes/mengx-movie-quotes/static/bootstrap.html" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392783389541" ignored="false" />
     <file path="$USER_HOME$/Documents/IOSDev/mengx-movie-quotes/mengx-movie-quotes/static/stylesheets/mybootstrap.css" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392764635140" ignored="false" />
-    <file path="/pinterest.css" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392785690124" ignored="false" />
+    <file path="/pinterest.css" changelist="320d09d5-e7fa-4b23-8dbb-53c483dc9649" time="1392839192184" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +43,16 @@
       <file leaf-file-name="mymeme.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/mymeme.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="134" selection-end="134" vertical-scroll-proportion="-1.9669422">
+            <state line="20" column="42" selection-start="671" selection-end="671" vertical-scroll-proportion="0.4857143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pinterest.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/stylesheets/pinterest.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="20" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -245,6 +249,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="Template Data Languages" />
+    <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -418,13 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/stylesheets/pinterest.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="12" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.39118457">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/pinterest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="100" selection-start="711" selection-end="711" vertical-scroll-proportion="27.461538">
@@ -432,9 +430,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/stylesheets/pinterest.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="20" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/mymeme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="134" selection-end="134" vertical-scroll-proportion="-1.9669422">
+        <state line="20" column="42" selection-start="671" selection-end="671" vertical-scroll-proportion="0.4857143">
           <folding />
         </state>
       </provider>

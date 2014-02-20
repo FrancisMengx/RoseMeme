@@ -57,6 +57,7 @@
 
 .delete-meme{
 	margin-left: 10px;
+	cursor: pointer;
 }
 
 @media (max-width: 960px) {
